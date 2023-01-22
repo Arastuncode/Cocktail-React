@@ -35,14 +35,13 @@ class Cocktail extends Component {
                 cocktailShow()
             }}>
                 <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                    <Offcanvas.Title>{name}</Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                     <Card>
                         <Card.Img variant="top" src={img} alt={name} />
                         <Card.Body>
                             <Card.Title>
-                                <h2>{name} </h2>
                                 <small>{isAlc} - {cat}</small>
                             </Card.Title>
                             <h4>Ingredients: </h4>
